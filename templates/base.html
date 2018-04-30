@@ -1,0 +1,36 @@
+{% extends "bootstrap/base.html" %}
+
+<html>
+	
+	<head>
+		{% block title %}Password Creator{% endblock %}
+	</head>
+
+	{% block body %}
+	<body>	
+		
+		{% block navbar %}
+		<nav class="navbar navbar-default">
+	  		<div class="container-fluid">
+		    <div class="navbar-header">
+		    	<a class="navbar-brand" href="/">XKCD Password Creator</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="/">Home</a></li>
+		    </ul>
+		  </div>
+		</nav>
+		{% endblock %}
+
+		{% block content %}
+		  <h1>Hello</h1>
+		{% endblock %}
+
+		<br><br><br>
+		<footer>
+			<p align="center">Created by Brad Kovacovich</p>
+		</footer>
+
+	</body>
+	{% endblock %}
+</html>

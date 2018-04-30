@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p>Here is a table of odd numbers:</p>
+<table border="2px" width="10%" align="center">
+	{% for i in range(0,num_list|length,2) %}
+	<tr>
+	<td align="center">{{num_list[i]}}</td>
+	<td align="center">{{num_list[i+1]}}</td>
+	</tr>
+	{% endfor %}		
+</table>
+{% endblock %}

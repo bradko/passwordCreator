@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method="GET" action="/processform">
+	<label for="fn">First Name</label>
+	<input type="text" name="first_name" id="fn" placeholder="Alice"><br>
+	<label for="fn">Last Name</label>
+	<input type="text" name="last_name" id="ln" placeholder="Smith"><br>
+	<label for="np">How Many Primes?</label>
+	<input type="text" name="numPrimes" id="np"><br>
+	<button type="submit">Submit</button>
+</form>
+
+<p>Here is a table of odd numbers:</p>
+<table border="2px" width="10%" align="center">
+	{% for i in range(0,num_list|length,2) %}
+	<tr>
+	<td align="center">{{num_list[i]}}</td>
+	<td align="center">{{num_list[i+1]}}</td>
+	</tr>
+	{% endfor %}		
+</table>
+{% endblock %}
